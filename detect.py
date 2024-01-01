@@ -77,9 +77,9 @@ if __name__ == '__main__':
     # 创建一个参数解析器
     parser = argparse.ArgumentParser(description='Process a file path.')
     # 添加参数
-    parser.add_argument('file_path', type=str, help='the path to the file to process')
-    parser.add_argument('Emotion', type=str)
-    parser.add_argument('speaker', type=str)
+    parser.add_argument('--file_path', type=str, help='the path to the file to process')
+    parser.add_argument('--Emotion', type=str)
+    parser.add_argument('--speaker', type=str)
     # 解析参数
     args = parser.parse_args()
 
