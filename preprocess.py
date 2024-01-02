@@ -5,7 +5,7 @@ import extract_feats.librosa as lf
 from utils import parse_opt
 
 if __name__ == '__main__':
-    config = parse_opt()
+    config,_ = parse_opt()
 
     if config.feature_method == 'o':
         of.get_data(config, config.data_path, train=True)

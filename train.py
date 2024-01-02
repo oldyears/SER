@@ -49,5 +49,5 @@ def train(config) -> None:
 
 
 if __name__ == '__main__':
-    config = parse_opt()
+    config,_ = parse_opt()
     train(config)
